@@ -525,12 +525,15 @@
     }
     return _rotationHandler;
 }
+
 - (void)setSupportedOrientations:(UIInterfaceOrientationMask)supportedOrientations {
     self.rotationHandler.supportedOrientations = supportedOrientations;
 }
+
 - (UIInterfaceOrientationMask)supportedOrientations {
     return self.rotationHandler.supportedOrientations;
 }
+
 - (UIDeviceOrientation)currentOrientation {
     return self.rotationHandler.currentOrientation;
 }
